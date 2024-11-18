@@ -456,9 +456,7 @@ export default {
             : url.searchParams.delete("p");
           window.history.pushState(null, "", url.toString());
         }
-        document.title = `${
-          this.cwd.replace(/.*\/(?!$)|\//g, "") || "/"
-        } - 文件库`;
+        document.title = `Glove Drive`;
       },
       immediate: true,
     },
